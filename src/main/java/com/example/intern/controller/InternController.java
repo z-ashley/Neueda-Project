@@ -41,12 +41,12 @@ public class InternController {
             return ResponseEntity.notFound().build();
         }
 
-        intern.setManager(internDetails.getManager());
-        intern.setMentor(internDetails.getMentor());
-        intern.setDepartment(internDetails.getDepartment());
-        intern.setRole(internDetails.getRole());
-        intern.setCycle(internDetails.getCycle());
-        intern.setPerformanceReview(internDetails.getPerformanceReview());
+//        intern.setManager(internDetails.getManager());
+//        intern.setMentor(internDetails.getMentor());
+//        intern.setDepartment(internDetails.getDepartment());
+//        intern.setRole(internDetails.getRole());
+//        intern.setCycle(internDetails.getCycle());
+//        intern.setPerformanceReview(internDetails.getPerformanceReview());
 
         Intern updatedIntern = internRepository.save(intern);
         return ResponseEntity.ok(updatedIntern);
